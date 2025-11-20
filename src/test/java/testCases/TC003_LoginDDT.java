@@ -13,8 +13,8 @@ public class TC003_LoginDDT extends BaseClass{
 	
 	
 	
-	@Test(dataProvider="LoginData",dataProviderClass=DataProviders.class)
-	public void verify_loginDDT(String email,String pwd,String exp, groups="DataDriven") throws InterruptedException
+	@Test(dataProvider="LoginData",dataProviderClass=DataProviders.class, groups="DataDriven")
+	public void verify_loginDDT(String email,String pwd,String exp) throws InterruptedException
 	{
 		logger.info("********Starting TC003_LoginDDT*********");
 		
